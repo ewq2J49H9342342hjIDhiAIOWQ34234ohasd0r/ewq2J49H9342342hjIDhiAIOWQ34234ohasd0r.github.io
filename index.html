@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>whathedogdoin</title>
+<meta property="og:title" content="Cool page made by whathedogdoin">
+<meta property="og:description" content="ˢⁿᶦᶠᶠ">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/1118221381562269767/395f3cf2e1f50e412c544defb27ea8c6.png?size=1024">
+<meta property="og:url" content="https://whathedogdoinn.github.io/">
+<meta property="og:site_name" content="whathedogdoin">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #330066, #000000);
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .container {
+    text-align: center;
+  }
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('https://cdn.discordapp.com/avatars/1118221381562269767/395f3cf2e1f50e412c544defb27ea8c6.png?size=1024');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+  }
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+  .social-icon {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .social-icon img {
+    height: 30px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .social-icon:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  .rolling-image {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('https://cdn.discordapp.com/avatars/1118221381562269767/395f3cf2e1f50e412c544defb27ea8c6.png?size=1024');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: roll 4s linear infinite alternate;
+  }
+  @keyframes roll {
+    0% {
+      transform: rotate(0deg);
+      left: 0;
+    }
+    100% {
+      transform: rotate(360deg);
+      left: calc(100% - 120px);
+    }
+  }
+  .audio-player {
+    margin-top: 20px;
+  }
+  audio {
+    width: 100%;
+  }
+  .github-icon img {
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-image"></div>
+    <div class="name">CommunistBoy</div>
+    <div class="social-icons">
+      <a class="social-icon discord-icon" href="https://discord.com/users/1118221381562269767" target="_blank">
+        <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+      </a>
+      <a class="social-icon youtube-icon" href="https://www.youtube.com/channel/UCRjbPrHU4l-v4j04odQATYw" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube">
+      </a>
+    </div>
+  </div>
+  <div class="rolling-image"></div>
+</body>
+</html>
